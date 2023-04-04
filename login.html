@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <title></title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        content: ["*"],
+        theme: {
+          extend: {
+            fontFamily: {
+              caveat: ["Caveat"],
+              CircularStd: ["Circular Std"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- sign up form  -->
+    <section
+      id="signUp"
+      class="relative after:absolute md:after:left-[50%] after:left-0 after:top-0 md:after:w-1/2 after:h-full after:bg-[#34CC9C] after:-z-10 before:absolute before:left-0 before:top-0 before:w-full before:h-full before:bg-[#ffffff] before:-z-10"
+    >
+      <!-- flex container  -->
+      <div
+        class="container flex flex-col md:flex-row items-center justify-between mx-auto relative"
+      >
+        <!-- left form side  -->
+        <div
+          class="md:w-1/2 flex flex-col justify-center items-center md:pt-0 pt-32"
+        >
+          <div class="md:min-w-[450px] p-4 mx-auto">
+            <!-- logo part  -->
+
+            <div class="logo absolute top-0 left-auto h-full -z-10 pt-6">
+              <img src="img/logo.svg" alt="" />
+            </div>
+
+            <!-- form part -->
+
+            <form action="#" method="post">
+              <span
+                class="block font-bold text-[36px] text-black not-italic mb-10 font-CircularStd"
+              >
+                Login to your account
+              </span>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                autocomplete="email"
+                placeholder="Email"
+                required
+                class="w-full bg-white border border-1 border-[#DCDCDC] rounded-lg px-4 py-[14px] font-medium text-base not-italic focus:outline-[#34CC9C] font-CircularStd placeholder-[#BEBEBE]"
+              />
+              <div class="relative">
+                <input
+                  type="password"
+                  name="password"
+                  autocomplete="current-password"
+                  placeholder="Password"
+                  id="password"
+                  required
+                  class="w-full bg-white border border-1 border-[#DCDCDC] rounded-lg px-4 py-[14px] font-medium text-base not-italic focus:outline-[#34CC9C] mt-6 pr-12 font-CircularStd placeholder-[#BEBEBE] "
+                />
+                <span class="absolute top-9 left-[90%] text-[#8C8C8C] w-6 h-6">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M2 5.27L3.28 4L20 20.72L18.73 22l-3.08-3.08c-1.15.38-2.37.58-3.65.58c-5 0-9.27-3.11-11-7.5c.69-1.76 1.79-3.31 3.19-4.54L2 5.27M12 9a3 3 0 0 1 3 3a3 3 0 0 1-.17 1L11 9.17A3 3 0 0 1 12 9m0-4.5c5 0 9.27 3.11 11 7.5a11.79 11.79 0 0 1-4 5.19l-1.42-1.43A9.862 9.862 0 0 0 20.82 12A9.821 9.821 0 0 0 12 6.5c-1.09 0-2.16.18-3.16.5L7.3 5.47c1.44-.62 3.03-.97 4.7-.97M3.18 12A9.821 9.821 0 0 0 12 17.5c.69 0 1.37-.07 2-.21L11.72 15A3.064 3.064 0 0 1 9 12.28L5.6 8.87c-.99.85-1.82 1.91-2.42 3.13Z"
+                    />
+                  </svg>
+                </span>
+              </div>
+
+              <!-- flex container remember  -->
+              <div class="flex items-center justify-between mt-6">
+                <!-- left part  -->
+                <div class="flex items-center cursor-pointer">
+                  <input
+                    id="terms-and-privacy"
+                    name="terms-and-privacy"
+                    type="checkbox"
+                    class="checked:bg-green-500 appearance-none rounded-full w-5 h-5 cursor-pointer border border-1 border-[#DCDCDC]"
+                  />
+                  <label
+                    for="terms-and-privacy"
+                    class="ml-2 block text-black cursor-pointer font-CircularStd font-medium text-base not-italic text-shadow-sm"
+                  >
+                    Remember me
+                  </label>
+                </div>
+
+                <!-- right part  -->
+                <div class="flex items-center justify-center">
+                  <a
+                    href="#"
+                    class="cursor-pointer font-CircularStd font-medium text-base not-italic text-[#34CC9C] text-shadow-sm"
+                  >
+                    Forgot Password?
+                  </a>
+                </div>
+              </div>
+
+              <!-- sign  in button -->
+
+              <div
+                class="bg-[#34CC9C] shadow-[0px 0px 0px 4px rgba(255, 255, 255, 0.01)] rounded-lg py-4 flex items-start justify-center cursor-pointer my-8"
+              >
+                <a
+                  href="#"
+                  class="block text-white cursor-pointer font-CircularStd font-medium text-base not-italic text-shadow-sm"
+                >
+                  Sign in with email
+                </a>
+              </div>
+
+              <!-- divider login text part  -->
+
+              <div class="flex space-x-6 items-center justify-between mb-8">
+                <span
+                  class="border border-1 border-solid border-[#EEEFF2] w-1/3"
+                ></span>
+                <p
+                  class="font-CircularStd font-medium text-base not-italic text-shadow-sm text-[#718096] whitespace-nowrap"
+                >
+                  Or login with
+                </p>
+                <span
+                  class="border border-1 border-solid border-[#EEEFF2] w-1/3"
+                ></span>
+              </div>
+
+              <!-- google & apple button  -->
+              <div class="flex items-center justify-between gap-3 mb-8">
+                <a
+                  href="#"
+                  class="flex items-center justify-center py-4 px-6 border border-1 rounded w-full shadow text-white bg-white bg-opacity-5"
+                >
+                  <div class="flex space-x-3">
+                    <img
+                      src="img/google.svg"
+                      alt=""
+                      class="w-[22px] h-[22px]"
+                    />
+                    <span
+                      class="font-CircularStd text-base not-italic text-shadow-sm text-black flex items-center justify-center"
+                    >
+                      Google</p
+                    >
+                  </div>
+                </a>
+
+                <a
+                  href="#"
+                  class="flex items-center justify-center gap-3 py-4 px-6 border border-1 rounded w-full shadow text-white bg-white bg-opacity-5"
+                >
+                  <div class="flex space-x-3">
+                    <img src="img/apple.svg" alt="" class="w-[22px] h-[22px]" />
+                    <span
+                      class="font-CircularStd text-base not-italic text-shadow-sm text-black flex items-center justify-center"
+                    >
+                      Apple
+                    </span>
+                  </div>
+                </a>
+              </div>
+
+              <!-- get started  -->
+              <p class="font-CircularStd font-medium text-base not-italic text-black">
+                Don’t have an account?
+                  <span class="text-[#34CC9C]">
+                    Get Started
+                  </span> 
+              </p>
+
+            </form>
+          </div>
+        </div>
+
+        <!-- right image side  -->
+
+        <div class="hidden md:flex flex-col items-center space-y-3 md:w-1/2">
+          <div class="img pt-28">
+            <img
+              src="img/form-thumb.png"
+              alt=""
+              class="md:w-[629px] w-[90%] mx-auto"
+            />
+          </div>
+
+          <div class="form-content text-center max-w-[472px]">
+            <!-- owl carrousel  -->
+            <div class="owl-carousel">
+              <!-- single carrousel item  -->
+              <div class="item">
+                <h2 class="font-caveat text-[#A03C48] font-normal text-4xl">
+                  Encamp
+                </h2>
+                <!-- problem tracking  -->
+                <p
+                  class="font-CircularStd font-bold text-5xl -tracking-wider text-black py-4"
+                >
+                  Why Encamp?
+                </p>
+                <span
+                  class="text-black font-[450] text-3xl my-6 block leading-[2.625rem]"
+                >
+                  Take the hassle out of your next adventure with Encamp
+                </span>
+              </div>
+
+              <!-- single carrousel item  -->
+
+              <div class="item">
+                <h2 class="font-caveat text-[#A03C48] font-normal text-4xl">
+                  Encamp
+                </h2>
+                <!-- problem tracking  -->
+                <p
+                  class="font-CircularStd font-bold text-5xl -tracking-wider text-black py-4"
+                >
+                  Why Encamp?
+                </p>
+                <span
+                  class="text-black font-[450] text-3xl my-6 block leading-[2.625rem]"
+                >
+                  Take the hassle out of your next adventure with Encamp
+                </span>
+              </div>
+
+              <!-- single carrousel item  -->
+
+              <div class="item">
+                <h2 class="font-caveat text-[#A03C48] font-normal text-4xl">
+                  Encamp
+                </h2>
+                <!-- problem tracking  -->
+                <p
+                  class="font-CircularStd font-bold text-5xl -tracking-wider text-black py-4"
+                >
+                  Why Encamp?
+                </p>
+                <span
+                  class="text-black font-[450] text-3xl my-6 block leading-[2.625rem]"
+                >
+                  Take the hassle out of your next adventure with Encamp
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- js part  -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
